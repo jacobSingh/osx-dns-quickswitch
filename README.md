@@ -7,6 +7,8 @@ On other networks (like some of my office wifi) CloudFlare (1.1.1.1) DNS doesn't
 
 I have no idea why and don't care enough to figure it out.
 
+Changing this on mac is a pain in the ass which requires you going to network settings and clicking around every time.
+
 This little script will toggle a 3rd party DNS provider of your choosing.
 
 ## Usage:
