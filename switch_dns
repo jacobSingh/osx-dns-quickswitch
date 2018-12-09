@@ -1,0 +1,10 @@
+#!/bin/bash
+DNS_SERVER="1.1.1.1"
+networksetup -getdnsservers Wi-Fi | grep -q "$DNS_SERVER"
+if [ $? != 0 ]; then
+   networksetup -setdnsservers Wi-Fi "$DNS_SERVER"
+   echo "Added 3rd party DNS $DNS_SERVER"
+else
+   networksetup -setdnsservers Wi-Fi Empty
+   echo "Removed 3rd party DNS"
+fi
